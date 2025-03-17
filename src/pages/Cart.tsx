@@ -1,4 +1,4 @@
-import { Minus, plus, Trash2 } from 'lucide-react';
+import { Minus, Plus, Trash2 } from 'lucide-react';
 import { useCartStore } from '@/lib/store';
 import { Button } from '@/components/ui/button';
 import {
@@ -66,7 +66,7 @@ export default function Cart() {
                       size="icon"
                       onClick={() => updateQuantity(item.id, item.quantity + 1)}
                     >
-                      <plus className="h-4 w-4" />
+                      <Plus className="h-4 w-4" />
                     </Button>
                   </div>
                   <Button
